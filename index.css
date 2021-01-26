@@ -1,0 +1,10 @@
+@import "reset.css";
+
+/* border: 1px solid black; */
+* {
+  box-sizing: border-box;
+}
+
+.show {
+  display: none;
+}
