@@ -1,10 +1,95 @@
 @import "reset.css";
 
-/* border: 1px solid black; */
-* {
-  box-sizing: border-box;
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
+/* to-do-list */
+/* frame */
+main.to-do {
+  top: 30%;
+  left: 5%;
+  width: 280px;
+  height: 450px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 6px solid #020202;
+  border-bottom: 10px solid #020202;
+  border-radius: 25px;
+  box-shadow: 0 1px 12px 2px #000000;
+  z-index: 0;
+}
+
+.to-do__title {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  text-align: center;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 2px 0;
+  border-radius: 0 0 13px 13px;
+  z-index: 1;
+}
+
+.to-do__block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.to-do__list {
+  background-color: rgba(170, 191, 208, 1);
+  border-radius: 19.5px 19.5px 0 0;
+  width: 100%;
+  height: calc(100% - 42.57px);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.to-do__item {
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid wheat;
+  word-break: break-all;
+}
+.to-do__insert {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.to-do__form {
+  width: 100%;
+  height: 0px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+}
+.to-do__input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+}
+.to-do__input:focus {
+  outline: 0;
+}
+
+.to-do__insert--btn {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  border-radius: 0 0 15px 15px;
+}
+
+/* js */
 .show {
-  display: none;
+  height: 25px;
 }

@@ -38,17 +38,20 @@ const deleteToDo = (e) => {
 const addItem = (id, txt) => {
   const newItem = document.createElement("li");
   const delBtn = document.createElement("i");
+  const span = document.createElement("span");
 
   newItem.classList.add("to-do__item");
   newItem.id = id;
-  newItem.innerHTML = txt;
+  span.innerHTML = txt;
 
   delBtn.classList.add("fas");
   delBtn.classList.add("fa-eraser");
   delBtn.classList.add("del");
+  delBtn.classList.add("fa-21x");
 
   delBtn.addEventListener("click", deleteToDo);
 
+  newItem.appendChild(span);
   newItem.appendChild(delBtn);
   toDoList.appendChild(newItem);
 };
@@ -87,6 +90,9 @@ const handleReset = (e) => {
     toDoList.removeChild(toDoList.firstChild);
   }
 
+  // LocalStorage를 초기화 하지만 LS__VALUE값이 남아있어,
+  //  reset 버튼 클릭 후 list를 추가하고 새로고침을 할 떄 reset하지 못함
+  LS__VALUE = [];
   localStorage.removeItem(LS__KEY);
 };
 
