@@ -94,6 +94,7 @@ main.to-do {
   );
   display: flex;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
 }
 .to-do__input {
   width: 100%;

@@ -11,3 +11,9 @@ html, css, js를 사용해 간단한 To Do List 웹 생성
 - HTML
 - CSS
 - JAVASCRIPT
+
+### screenshot
+
+---
+
+![메인 화면](assets/img/main.png "Main page")
