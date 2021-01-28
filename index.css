@@ -11,19 +11,19 @@ body {
 /* to-do-list */
 /* frame */
 main.to-do {
-  top: 30%;
-  left: 75%;
-  transform: rotate(5deg);
+  top: 25%;
+  left: 74%;
+  transform: rotate(-2deg);
   width: 280px;
   height: 450px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 6px solid #020202;
-  border-bottom: 10px solid #020202;
+  border: 6px solid rgba(2, 2, 2, 0.8);
+  border-bottom: 10px solid rgba(2, 2, 2, 0.8);
   border-radius: 25px;
-  box-shadow: 0 1px 12px 2px #000000;
+  box-shadow: 0 3px 9px 1px #020202;
   z-index: 0;
 }
 
@@ -47,7 +47,11 @@ main.to-do {
   position: relative;
 }
 .to-do__list {
-  background-color: rgba(170, 191, 208, 1);
+  background: linear-gradient(
+    to bottom,
+    rgb(161, 186, 206) 30%,
+    rgb(185, 191, 196)
+  );
   border-radius: 19.5px 19.5px 0 0;
   width: 100%;
   height: calc(100% - 42.57px);
@@ -74,12 +78,20 @@ main.to-do {
   bottom: 0;
   border-radius: 0 0 17px 17px;
   border: 0.5px solid #ffffff;
-  background-color: #ffffff;
+  background: linear-gradient(
+    to bottom,
+    rgb(243, 240, 240),
+    rgba(255, 255, 255, 1)
+  );
 }
 .to-do__form {
   width: 100%;
   height: 0px;
-  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    to bottom,
+    rgb(243, 237, 237),
+    rgb(247, 246, 246)
+  );
   display: flex;
   justify-content: center;
 }
@@ -102,4 +114,16 @@ main.to-do {
 /* js */
 .show {
   height: 25px;
+}
+
+.time {
+  font-family: "Hi Melody", cursive;
+  top: 5%;
+  left: 5%;
+  position: absolute;
+  font-size: 100px;
+  color: #fcf7f6;
+  text-shadow: 5px 5px 4px black;
+  text-align: center;
+  padding: 0 5px;
 }
