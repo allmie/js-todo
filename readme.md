@@ -16,4 +16,4 @@ html, css, js를 사용해 간단한 To Do List 웹 생성
 
 ---
 
-![메인 화면](assets/img/main.png "Main page")
+![메인 화면](assets/img/main.PNG "Main page")

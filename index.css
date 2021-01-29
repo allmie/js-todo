@@ -3,7 +3,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(/assets/img/desk1.jpg);
+  background-image: url("assets/img/desk1.jpg");
   background-size: cover;
   font-family: "Gothic A1", sans-serif;
 }
@@ -70,6 +70,16 @@ main.to-do {
   padding-bottom: 5px;
   border-bottom: 1px solid wheat;
   word-break: break-all;
+  animation: ease-out 1s createItem;
+}
+/* animation */
+@keyframes createItem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .to-do__insert {
